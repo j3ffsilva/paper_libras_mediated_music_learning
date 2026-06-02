@@ -122,235 +122,208 @@ three research questions:
   interpretability of UES-Br responses in this context?
 \end{itemize}
 
-The remainder of the paper is organized as follows. Section II presents the theoretical
-background and related work on LIBRAS-mediated music education, sign-language-based
-educational interfaces, engagement measurement, and accessible UX evaluation with young
-participants. Section III describes the study context, participants, protocol, UES-Br
-scoring, and qualitative analysis procedure. Section IV reports the results, beginning
-with observed interaction patterns and interface barriers before treating UES-Br as
-complementary evidence. Section V discusses the empirical and methodological
-implications of the findings, including limitations and directions for future work.
-Section VI concludes the paper.
+The remainder of the paper is organized as follows. Section II reviews related work on
+DHH technologies, LIBRAS-mediated music learning, engagement measurement, and accessible
+evaluation methods, building toward the gap the study addresses. Section III describes
+the study context, participants, protocol, UES-Br scoring, and qualitative analysis
+procedure. Section IV reports the results, beginning with observed interaction patterns
+and interface barriers before treating UES-Br as complementary evidence. Section V
+discusses the empirical and methodological implications of the findings, including
+limitations and directions for future work. Section VI concludes the paper.
 
-\section{Theoretical Background and Related Work}
+\section{Related Work}
 
-\subsection{Digital Technologies for Deaf and Hard-of-Hearing Learners}
+Music education for deaf learners has long been designed around hearing-centered
+assumptions, yet deaf individuals can perceive rhythm, vibration, and visual patterns in
+music, and digital interfaces can extend those channels of access. Benites addressed this
+design challenge through a research program that produced LIBRAS Academy, a music
+learning environment in which notes are associated with colors, handshapes, and
+gesture-recognition feedback mediated by Brazilian Sign Language
+(LIBRAS)~\cite{benites2024,benites2024laclo}. In this approach, musical notes are not
+only heard; they are seen, enacted, named, and compared through sign-based interaction,
+allowing a learner without residual hearing to navigate the interface through visual and
+LIBRAS-mediated cues. Rocha and colleagues developed complementary principles for
+LIBRAS-based educational software grounded in semiotic theory~\cite{rocha2016,rocha2023uais},
+showing that when images, written language, and signs are combined in educational
+software, their value depends on whether learners can connect those resources during
+activity, not on whether each is individually present. Applied to LIBRAS Academy, this
+principle means that a musical note, a color, a handshape, a written label, and a
+feedback message form a network: accessibility depends on the coherence of the whole
+arrangement, not only on the presence of LIBRAS content. Neither Benites nor Rocha,
+however, evaluated how deaf adolescents actually interact with such an interface under
+realistic first-contact conditions -- a gap this study addresses directly.
 
-Digital technologies for deaf and hard-of-hearing (DHH) learners have been explored in
-areas such as language learning, communication support, literacy, classroom participation,
-and family sign language practice. Recent HCI work emphasizes that these systems
-operate within linguistic, family, educational, and accessibility contexts, not only as
-technical artifacts~\cite{zhao2025dhhchildren}. Studies with
-young deaf users also show that requirements and usability cannot be inferred only from
-adult expectations: prototyping and evaluation need to account for children's language
-development, mediation, attention, and ways of expressing difficulty~\cite{korte2014requirements}.
+The broader HCI literature on digital technologies for deaf and hard-of-hearing (DHH)
+learners reinforces why that gap matters. A recent systematic review of over a hundred
+papers on DHH technologies identified language learning, communication support, and
+family sign language practice as the dominant research areas; music education and
+engagement-based interfaces for deaf learners remain underrepresented~\cite{zhao2025dhhchildren}.
+Sign-language applications that do exist show that their value cannot be assumed from
+design intentions: Chuan and Guardino~\cite{chuan2016smartsignplay} demonstrated that
+even well-designed ASL applications for DHH children and families depend on whether
+users can coordinate signs, feedback, visual prompts, and task goals in context -- an
+empirical question, not a design guarantee. More fundamentally, Korte et al.
+~\cite{korte2014requirements} showed that requirements and usability judgments for deaf
+children cannot be inferred from adult or hearing-user expectations: language
+development, communication mediation, and ways of expressing difficulty all shape how
+children interpret and respond to a system. These findings generalize to post-use
+evaluation: instruments and protocols designed for hearing adults may produce unreliable
+or uninterpretable responses with DHH populations when applied without adaptation.
 
-Sign-language-based educational tools illustrate this challenge. For example, interactive
-sign language applications can support communication and learning, but their value depends
-on whether children and families can interpret signs, feedback, visual prompts, and task
-goals in context~\cite{chuan2016smartsignplay}. For the present study, this literature
-helps delimit the problem: accessibility is tested during use, as learners coordinate
-visual information, written language, signs, body movement, mediation, and task
-expectations.
+Measuring engagement provides a structured way to complement behavioral observation, but
+raises its own challenges in this context. The User Engagement Scale (UES), developed by
+O'Brien and Toms~\cite{obrien2010ues}, operationalizes engagement as a multidimensional
+construct covering Focused Attention, Perceived Usability, Aesthetic Appeal, and Reward.
+These dimensions capture aspects of perceived experience that behavioral observation
+alone cannot: whether a user felt in control, found the interface visually appealing, or
+considered the activity worthwhile. The UES-Br adaptation by Miranda, Li, and
+Darin~\cite{miranda2021uesbr} provides a validated Portuguese-language version for
+Brazilian HCI contexts, and was selected here because using an English-language
+instrument with Brazilian adolescents would introduce an avoidable validity threat.
+However, UES-Br was validated with adult Brazilian participants; it has not been applied
+with deaf populations of any age, and several of its items -- such as ``I let myself be
+carried away'' and ``gratifying'' -- involve idiomatic or abstract vocabulary that may be
+difficult regardless of the language of administration. Doherty and Doherty argue that
+engagement research should use a diverse methodological toolkit rather than treating any
+instrument as a direct window onto the phenomenon itself~\cite{doherty2018engagement}. In
+this study, that argument shapes the analysis: UES-Br responses are treated as evidence
+of perceived experience, while observational records are treated as evidence of behavior,
+and their convergence or divergence is analytically informative precisely because the two
+do not measure the same thing.
 
-\subsection{LIBRAS-Mediated Music Learning}
-
-Benites' research on music education for deaf children provides the immediate foundation
-for this study~\cite{benites2024,benites2024laclo}. His work frames music education as a
-multimodal experience in which visual stimuli, colors, gesture recognition, vibration,
-and inclusive pedagogy can make musical concepts and structures available to deaf learners. In this
-approach, musical notes are not only heard; they are also seen, enacted, named, compared,
-sequenced, and interpreted. LIBRAS Academy inherits this orientation by organizing musical
-content through visual and sign-based interaction.
-
-The present study extends that line of work by shifting the analytical focus from the
-development and educational promise of the interface to how adolescent users acted during
-first-contact sessions. This shift matters because the success of an accessible educational technology
-depends not only on its conceptual design, but also on whether learners can understand
-instructions, interpret visual feedback, manage task rhythm, request mediation, and relate
-the interface to their existing communicational repertoires. The study therefore treats
-music learning as a site for observing multimodal interaction, not as an outcome measured
-through musical achievement.
-
-\subsection{Sign-Language-Mediated Interfaces and Semiotic Framing}
-
-Rocha~\cite{rocha2016} and Rocha et al.~\cite{rocha2023uais} provide a related
-foundation for accessible learning technologies based on Peircean semiotics. Their work
-on assistive technology for deaf and hearing children shows how images, written language,
-and LIBRAS signs can be combined in educational software to support communication and
-learning. For LIBRAS Academy, this implies that a musical note, a color, a handshape, a
-written label, and a feedback message should not be treated as separate interface
-resources. They form a network of signs whose educational value depends on whether
-learners can connect them during activity.
-
-This semiotic framing is useful for interpreting the empirical observations. When a
-participant questions the national origin of signs, is affected by the spatial arrangement
-of notes, corrects an error in a memory task, or persists until a progress bar is filled,
-each behavior indicates a relation among sign systems, interface feedback, and user
-expectation. Accessibility therefore depends on how coherently the whole multimodal
-arrangement works, not only on whether LIBRAS is present.
-
-\subsection{Engagement, UES, and UES-Br}
-
-User engagement is central to HCI, but it is not a single directly observable property.
-The User Engagement Scale (UES), developed by O'Brien and Toms~\cite{obrien2010ues},
-operationalizes engagement as a multidimensional construct originally comprising Focused
-Attention, Perceived Usability, Aesthetics, Endurability, Novelty, and Felt Involvement.
-A later four-dimension configuration groups the instrument into Focused Attention,
-Perceived Usability, Aesthetic Appeal, and Reward. These dimensions are relevant for
-educational technologies because they capture attention, perceived control or difficulty,
-visual appeal, curiosity, and the sense that an activity was worthwhile.
-
-The UES-Br translation and cross-cultural adaptation by Miranda, Li, and
-Darin~\cite{miranda2021uesbr} provides a validated Portuguese-language version of the
-instrument for Brazilian HCI research. In this study, UES-Br was selected because
-participants were Brazilian adolescents and because an English instrument would threaten
-validity. Nevertheless, translation into Portuguese does not guarantee accessibility for
-deaf participants. Several items contain vocabulary and
-abstraction levels that may be difficult in a mediated testing situation involving LIBRAS,
-written Portuguese, and adult explanation.
-
-This cautious treatment follows Doherty and Doherty's argument that engagement research
-should use a diverse methodological toolkit and avoid confusing models of engagement with
-engagement itself~\cite{doherty2018engagement}. In this paper, UES-Br responses are
-treated as evidence of perceived experience, while observational notes are treated as
-evidence of observed behavior. Their convergence or divergence is analytically useful
-precisely because they do not measure the same phenomenon in the same way.
-
-\subsection{Young Participants, Reflection, and Accessible UX Evaluation}
-
-The study also draws on literature concerning how young participants monitor and express
-their learning experiences. Studies on metacognition, self-perception, and feedback
-emphasize that learners' evaluation of an activity is shaped by affect, curiosity,
-anxiety, motivation, and opportunities to use feedback to regulate action~\cite{rocha2023metacog,vanloon2021}.
-These ideas matter because the participants were asked to complete tasks and then
-judge whether the experience was confusing, enjoyable, frustrating, rewarding, or worth
-recommending.
-
-Research with DHH learners further requires attention to how reflection is elicited.
-Interviews, questionnaires, and think-aloud approaches must be adapted to the
-communication practices of deaf participants~\cite{albalhareth2022}. In this study, a
-conventional spoken think-aloud protocol was inappropriate. Observation, LIBRAS mediation,
-written clarification, and post-task responses were therefore combined. Accessible UX
-evaluation appears here as an interactional arrangement involving participant, interface,
-translator, mediator, and sometimes family member, rather than as an instrument
-administered after use.
+The methodological challenge of eliciting reliable self-report from deaf adolescents runs
+through all of the above. Young learners' judgments of their own experience are shaped by
+affect, social context, available vocabulary, and the conditions under which a question
+is asked, not only by the interaction itself~\cite{rocha2023metacog,vanloon2021}. For DHH
+learners, these conditions are more demanding: spoken think-aloud, self-administered
+questionnaires in written form, and post-task interviews all assume communicational
+conditions that may not hold for participants responding through sign language, limited
+written Portuguese, or adult mediation~\cite{albalhareth2022}. There is no established
+protocol for conducting accessible UX evaluation with deaf adolescents in
+sign-language-mediated settings. The present study contributes to filling that gap by
+combining behavioral observation, a mediated UES-Br administration, and open-ended
+comments, and by reporting not only what participants did and said, but the specific
+conditions under which each form of evidence was produced.
 
 \section{Methodology}
 
-This is a qualitative exploratory study. Its purpose is to describe how deaf adolescents
-interacted with LIBRAS Academy during individual first-contact sessions and how their
-perceived experience, reported through UES-Br, can be interpreted alongside observational
-evidence. The study does not measure learning gains, statistically validate the platform,
-or validate UES-Br for deaf adolescents. Instead, it characterizes interaction patterns,
-mediation demands, interface barriers, and engagement-related behavior in a small
-empirical corpus.
+\textbf{Study design.} This is a qualitative exploratory study that characterizes how six
+deaf adolescents interacted with LIBRAS Academy during individual first-contact sessions,
+and how their perceived engagement, reported through UES-Br, can be triangulated with
+behavioral observation. The design prioritizes rich description of situated interaction
+over measurement of outcomes or generalization.
 
-The tests were conducted on April 6, 2026, at CeAC, within DERDIC, at PUC-SP, in São
-Paulo, Brazil. DERDIC combines deaf education, accessibility services, LIBRAS-related
-practices, and interdisciplinary support in hearing, voice, and language. The
-participants were not generic users of an educational game, but deaf learners in an
-institutional environment where communication, family mediation, hearing history, and
-inclusive education are part of everyday practice.
+\textbf{Setting.} All sessions were conducted on April 6, 2026, at the Children's
+Hearing Center (CeAC), within DERDIC, at PUC-SP, in São Paulo, Brazil. DERDIC is a
+specialized educational and clinical center that operates at the intersection of deaf
+education, hearing and language rehabilitation, LIBRAS support, and family-facing
+services. This setting was chosen because it provides access to deaf adolescents in a
+context where sign language use, family mediation, and inclusive education practices are
+part of the institutional routine, making it ecologically appropriate for evaluating an
+accessible learning interface.
 
-Six deaf adolescents aged 13 to 15 participated in the study. Participants are referred
-to by codes P1 to P6 to preserve anonymity. Participants differed in hearing profile, school year, LIBRAS history, prior
-music experience, and familiarity with artificial intelligence. These differences shaped
-how each participant approached the interface,
-interpreted instructions, requested help, and responded to the post-use questionnaire.
+\textbf{Participants.} Six deaf adolescents aged 13 to 15 were recruited through the
+institution. Inclusion criteria were: being a student or service user of DERDIC/CeAC,
+having at least some familiarity with LIBRAS, and having a responsible adult present
+during the session. Participants had not previously used LIBRAS Academy. They are
+identified by codes P1 to P6 to preserve anonymity. Table~\ref{tab:participants}
+summarizes their profiles; differences in hearing history, LIBRAS background, prior music
+experience, and written Portuguese fluency are analytically relevant because they shaped
+how each participant interpreted instructions, managed task demands, and responded to the
+post-use questionnaire.
 
 \begin{table*}[t]
-  \caption{Participant profiles reconstructed from testing notes.}
+  \caption{Participant profiles.}
   \label{tab:participants}
   \footnotesize
-  \begin{tabular}{@{}p{0.05\linewidth} p{0.13\linewidth} p{0.18\linewidth} p{0.18\linewidth} p{0.34\linewidth}@{}}
+  \begin{tabular}{@{}p{0.04\linewidth} p{0.12\linewidth} p{0.22\linewidth} p{0.20\linewidth} p{0.30\linewidth}@{}}
     \toprule
-    \textbf{Code} & \textbf{Age / school} & \textbf{Hearing profile} & \textbf{LIBRAS / music} & \textbf{Analytical relevance} \\
+    \textbf{Code} & \textbf{Age / year} & \textbf{Hearing profile} &
+      \textbf{LIBRAS} & \textbf{Music / Portuguese} \\
     \midrule
-    P1 & 14; 1st year high school & Moderate hearing loss &
-      LIBRAS since 2015; no prior music study &
-      Reflective and exploratory; initially rejected music but asked conceptual and technical questions. \\
-    P2 & 14; 1st year high school & Complete deafness &
-      LIBRAS learned in deaf family context; no prior music study &
-      Efficient task completion, sensitivity to task pace, limited voluntary continuation. \\
-    P3 & 14; 9th grade & Asymmetric hearing loss &
-      Four to five years of LIBRAS; some prior music experience &
-      Fluent progression, self-correction, and mostly autonomous interaction. \\
-    P4 & 13; 9th grade & Complete deafness after prior hearing variation &
-      LIBRAS since childhood; brief prior music experience &
-      Rapid, selective, pace-sensitive engagement; persisted in progress-based activity. \\
-    P5 & 15; 9th grade & Partial hearing &
-      Three years of LIBRAS; no formal music study &
-      Relied strongly on images; possible acquiescence/social desirability in questionnaire responses. \\
-    P6 & 15; 1st year high school & Partial hearing &
-      Long-term LIBRAS use; likes music &
-      Greater ease with written Portuguese; mostly autonomous task interpretation. \\
+    P1 & 14; 1st HS & Moderate hearing loss &
+      Since 2015 (11 yrs) &
+      No music study; standard written Portuguese fluency. \\
+    P2 & 14; 1st HS & Complete deafness; no variation &
+      Learned in deaf family (parents deaf) &
+      No music study; standard written Portuguese fluency. \\
+    P3 & 14; 9th gr. & Asymmetric (right 15\%, left none) &
+      4--5 years; deaf cousins &
+      Some prior music exposure; standard fluency. \\
+    P4 & 13; 9th gr. & Complete deafness; prior hearing variation &
+      Since childhood (5 yrs) &
+      About 1 year of music study; standard fluency. \\
+    P5 & 15; 9th gr. & Partial hearing (left ear) &
+      3 years; deaf uncle &
+      No formal music study; limited written Portuguese. \\
+    P6 & 15; 1st HS & Partial hearing (right ear) &
+      11 years; only deaf in family &
+      Likes music; stronger written Portuguese fluency. \\
     \bottomrule
   \end{tabular}
 \end{table*}
 
-Each individual session followed a semi-structured protocol reconstructed from the testing
-script and manual annotations. Sessions began with profile questions answered by the
-responsible adult and, when possible, by the participant. The main task block included
-seven activities: free exploration from the home screen; the ``Alphabet in LIBRAS'' game;
-``What Are the Musical Notes?''; ``Conductor of Notes''; ``Musical Rainbow''; ``Note
-Collector''; and a final free-choice task. Participants could request help at any point
-and could indicate when they wanted to move to the next activity. The protocol therefore
-combined task structure with opportunities for mediation, repetition, and participant-led
-continuation.
+\textbf{Session protocol.} Each session was conducted individually and followed a
+structured script. The research team comprised three members: one researcher dedicated
+to interacting with the participant and guiding the task sequence, one researcher
+responsible for observational annotation and audiovisual documentation, and a LIBRAS
+interpreter who translated task instructions and questionnaire items when needed. A
+responsible adult was present in all sessions. Sessions began with a profile interview
+answered by the responsible adult and, when possible, by the participant, covering
+hearing history, LIBRAS background, prior music and technology experience. The main task
+block comprised seven activities presented in fixed order: free exploration of the home
+screen; ``Alphabet in LIBRAS''; ``What Are the Musical Notes?''; ``Conductor of Notes'';
+``Musical Rainbow''; ``Note Collector''; and a free-choice final task. Participants could
+request help at any moment and could indicate readiness to advance to the next activity.
+Total session duration ranged from 7 to 18 minutes of active task time across participants.
 
-The empirical corpus analyzed in this paper comprises manual observational annotations,
-task progression notes, mediation records, open-ended comments, and post-use UES-Br
-responses exported from Google Forms. The UES-Br was administered after the interaction
-tasks with support from a LIBRAS translator and, when necessary, a responsible adult.
-Although screen recording was part of the broader documentation protocol, the present
-analysis relies on the observational notes and questionnaire records; audiovisual material
-is not treated here as a fully coded corpus.
+\textbf{Data collection.} The empirical corpus comprises: manual observational
+annotations recorded in real time by the documentation researcher; task progression notes
+indicating which phases were reached in each activity; mediation records noting when and
+how support was provided; and post-use responses to UES-Br administered through Google
+Forms. The UES-Br was completed by each participant immediately after the tasks, with
+verbal item-by-item translation by the LIBRAS interpreter and, when necessary, additional
+clarification by the responsible adult. Participants responded at their own pace;
+responses were entered into Google Forms by the participant or, when needed, by the
+interpreter. Screen recordings were collected as part of the documentation protocol but
+are not analyzed here as a coded corpus; observational notes are the primary qualitative
+source.
 
-The UES-Br responses were analyzed descriptively. The instrument contains 30 Likert items
-grouped into Focused Attention (FA), Perceived Usability (PU), Aesthetic Appeal (AE), and
-Reward (RW), plus one open-ended prompt. FA and AE were computed as item means. PU
-was computed both as a raw mean and as a corrected mean, because PU1--PU6 and PU8 are
-negatively worded and must be inverted using $6 - x$ before interpretation. RW was also
-computed both as a raw mean and as a corrected mean, because RW3 is negatively worded.
-All scores in Table~\ref{tab:uesbr} were verified by manual inspection against the
-original PDF exports of the Google Forms responses. Because the sample is small and several items required
-explanation, UES-Br is not used for inferential claims. It is treated as complementary
-evidence of perceived experience.
+\textbf{UES-Br scoring.} The instrument contains 30 Likert items (scale 1--5) grouped
+into four dimensions: Focused Attention (FA, 7 items), Perceived Usability (PU, 8
+items), Aesthetic Appeal (AE, 5 items), and Reward (RW, 10 items), plus one open-ended
+prompt. FA and AE contain only positively worded items and were computed as item means.
+PU contains seven negatively worded items (PU1--PU6 and PU8) and one positively worded
+item (PU7); it is reported as both a raw mean and a corrected mean, where negatively
+worded items are inverted using $\text{score}_{\text{corr}} = 6 - \text{score}_{\text{raw}}$
+before averaging. RW3 is negatively worded and RW is likewise reported in both raw and
+corrected form. All individual item responses were verified by manual inspection against
+the original PDF exports of the Google Forms records prior to computing means. Given the
+small sample and the mediated administration, UES-Br results are used descriptively and
+as complementary evidence of perceived experience, not for inferential claims.
 
-\begin{table*}[t]
-  \caption{Descriptive UES-Br response means by participant. PU and RW are reported both as raw means and corrected means after inverting negatively worded items.}
-  \label{tab:uesbr}
-  \begin{tabular}{lcccccc}
-    \toprule
-    \textbf{Code} & \textbf{FA} & \textbf{PU raw} & \textbf{PU corr.} & \textbf{AE} & \textbf{RW raw} & \textbf{RW corr.} \\
-    \midrule
-    P1 & 3.86 & 3.00 & 3.25 & 3.00 & 3.50 & 3.50 \\
-    P2 & 3.00 & 3.12 & 3.12 & 3.80 & 4.00 & 3.80 \\
-    P3 & 3.43 & 3.62 & 2.62 & 3.80 & 4.20 & 4.00 \\
-    P4 & 2.29 & 2.12 & 4.12 & 1.80 & 2.90 & 2.70 \\
-    P5 & 3.43 & 1.62 & 4.88 & 5.00 & 4.50 & 4.90 \\
-    P6 & 3.29 & 3.38 & 2.88 & 3.60 & 3.30 & 3.30 \\
-    \bottomrule
-  \end{tabular}
-\end{table*}
+\textbf{Qualitative analysis.} Observational annotations were coded using a hybrid
+thematic procedure. An initial set of codes was derived deductively from the three
+research questions; additional codes were developed inductively through close reading of
+the annotation corpus. The coding was performed by one researcher and reviewed in a
+collaborative session with the full research team, where codes were consolidated and
+discrepancies resolved by consensus. The final codebook comprised five categories:
+interface barriers (layout, pace, recognition, scale); persistence and voluntary
+continuation; curiosity and exploratory behavior; instrument accessibility problems; and
+mediation and social context. Coded events were organized by participant and activity to
+support cross-case comparison. The analysis does not reach theoretical saturation; it
+identifies recurring patterns and contrastive cases across six first-contact sessions. In
+the triangulation, UES-Br responses and observational codes are treated as distinct forms
+of evidence -- perceived experience and observed behavior, respectively -- whose
+convergence or divergence is analytically informative.
 
-The qualitative analysis used a hybrid thematic procedure guided by the research
-questions and refined through close reading of the annotations. Observed events were
-organized by participant, activity, type of event, and supporting evidence. The main
-codes were: interface barriers; persistence or voluntary continuation; curiosity and
-exploration; problems with the evaluation instrument; and mediation or social context.
-This exploratory analysis does not reach theoretical saturation; it identifies recurring
-patterns and contrastive cases across six first-contact sessions. In the results, UES-Br
-responses and observations are triangulated as distinct forms of evidence: the former
-captures perceived experience, while the latter captures observed behavior.
-
-Ethical considerations are central because the study involves minors, deaf participants,
-and interaction data. The research design established voluntary agreement by participants
-and/or guardians, supervision by a responsible adult, minimized distractions, a researcher
-dedicated to interaction with the participant, a researcher dedicated to textual and
-audiovisual documentation, and a LIBRAS translator when needed. The reporting preserves
-participant anonymity through the use of codes P1--P6.
+\textbf{Ethical considerations.} The study was conducted in accordance with applicable
+ethical guidelines for research involving minors. Informed consent was obtained from
+responsible adults; participants provided verbal assent. \textit{[Ethics approval number
+to be inserted before submission.]} Participation was voluntary and participants could
+withdraw at any time without consequence. Anonymity is preserved through participant
+codes P1--P6; no names, school identifiers, or other direct identifiers appear in the
+analysis or reporting.
 
 \section{Results}
 
@@ -450,8 +423,27 @@ temporal rhythm, feedback, and control, not only LIBRAS videos or visual musical
 
 \subsection{UES-Br as Complementary Evidence}
 
-The UES-Br results in Table~\ref{tab:uesbr} are best read as perceived experience
-under mediated conditions, not as a stand-alone measurement of engagement. They help
+\begin{table*}[t]
+  \caption{Descriptive UES-Br means by participant. PU and RW are reported as raw means
+  and as corrected means after inverting negatively worded items ($6 - \text{score}$).}
+  \label{tab:uesbr}
+  \begin{tabular}{lcccccc}
+    \toprule
+    \textbf{Code} & \textbf{FA} & \textbf{PU raw} & \textbf{PU corr.} &
+      \textbf{AE} & \textbf{RW raw} & \textbf{RW corr.} \\
+    \midrule
+    P1 & 3.86 & 3.00 & 3.25 & 3.00 & 3.50 & 3.50 \\
+    P2 & 3.00 & 3.12 & 3.12 & 3.80 & 4.00 & 3.80 \\
+    P3 & 3.43 & 3.62 & 2.62 & 3.80 & 4.20 & 4.00 \\
+    P4 & 2.29 & 2.12 & 4.12 & 1.80 & 2.90 & 2.70 \\
+    P5 & 3.43 & 1.62 & 4.88 & 5.00 & 4.50 & 4.90 \\
+    P6 & 3.29 & 3.38 & 2.88 & 3.60 & 3.30 & 3.30 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+Table~\ref{tab:uesbr} presents the UES-Br results, which are best read as perceived
+experience under mediated conditions, not as a stand-alone measurement of engagement. They help
 identify contrasts among cases, but they do not replace the observational evidence.
 Some of the clearest findings were divergences between observed interaction and
 questionnaire response.
