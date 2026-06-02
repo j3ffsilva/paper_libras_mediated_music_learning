@@ -1,31 +1,31 @@
-\documentclass[conference]{IEEEtran}
+\documentclass{llncs}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{cite}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{booktabs}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \begin{document}
 
 \title{UES-Br and LIBRAS-Mediated Music Learning: Exploratory Qualitative Study
 of Deaf Adolescents' Interaction with LIBRAS Academy}
 
-\author{
-  \IEEEauthorblockN{%
-    Guilherme Henrique de Oliveira Cestari\IEEEauthorrefmark{1},
-    Ismar Frango Silveira\IEEEauthorrefmark{2},
-    Cristiano da Silva Benites\IEEEauthorrefmark{3},
-    Jefferson de Oliveira Silva\IEEEauthorrefmark{1}%
-  }
-  \IEEEauthorblockA{%
-    \IEEEauthorrefmark{1}Pontifical Catholic University of São Paulo, São Paulo, Brazil\\
-    \IEEEauthorrefmark{2}Mackenzie Presbyterian University, São Paulo, Brazil\\
-    \IEEEauthorrefmark{3}Institute of Technology and Leadership, São Paulo, Brazil\\
-    ghocestari@pucsp.br%
-  }
-}
+\titlerunning{UES-Br and LIBRAS-Mediated Music Learning}
+
+\author{Guilherme H.\,O. Cestari\inst{1} \and
+Ismar F. Silveira\inst{2} \and
+Cristiano da S. Benites\inst{3} \and
+Jefferson de O. Silva\inst{1}}
+
+\authorrunning{Cestari et al.}
+
+\institute{Pontifical Catholic University of São Paulo, São Paulo, Brazil\\
+\email{ghocestari@pucsp.br}
+\and
+Mackenzie Presbyterian University, São Paulo, Brazil
+\and
+Institute of Technology and Leadership, São Paulo, Brazil}
 
 \maketitle
 
@@ -40,21 +40,17 @@ responses to the Brazilian Portuguese adaptation of the User Engagement Scale (U
 The analysis characterizes interaction patterns, interface barriers, mediation demands,
 and the limits of interpreting UES-Br responses in this context. The sessions showed
 that participants could complete the core activities and displayed different forms of
-engagement, including
-reflective exploration, efficient task completion, self-correction, selective
-persistence, and image-based progression under reading constraints. Barriers emerged
-around task onboarding, visual layout, game pace, scroll mechanics, recognition
-reliability, and abstract questionnaire vocabulary. Correcting negatively worded
-UES-Br items was essential for interpretation, but the questionnaire remained
-dependent on mediation and vulnerable to semantic difficulty and possible
-acquiescence. The paper contributes empirical evidence about LIBRAS-mediated music
-learning and a methodological reflection on using UES-Br with deaf adolescents.
+engagement, including reflective exploration, efficient task completion, self-correction,
+selective persistence, and image-based progression under reading constraints. Barriers
+emerged around task onboarding, visual layout, game pace, scroll mechanics, recognition
+reliability, and abstract questionnaire vocabulary. Correcting negatively worded UES-Br
+items was essential for interpretation, but the questionnaire remained dependent on
+mediation and vulnerable to semantic difficulty and possible acquiescence. The paper
+contributes empirical evidence about LIBRAS-mediated music learning and a methodological
+reflection on using UES-Br with deaf adolescents.
+\keywords{Deaf adolescents \and LIBRAS \and music education \and UES-Br \and
+inclusive learning technologies \and accessibility evaluation}
 \end{abstract}
-
-\begin{IEEEkeywords}
-Deaf adolescents; LIBRAS; music education; UES-Br; inclusive learning technologies;
-accessibility evaluation.
-\end{IEEEkeywords}
 
 \section{Introduction}
 
@@ -232,7 +228,7 @@ experience, and written Portuguese fluency are analytically relevant because the
 how each participant interpreted instructions, managed task demands, and responded to the
 post-use questionnaire.
 
-\begin{table*}[t]
+\begin{table}[t]
   \caption{Participant profiles.}
   \label{tab:participants}
   \footnotesize
@@ -261,7 +257,7 @@ post-use questionnaire.
       Likes music; stronger written Portuguese fluency. \\
     \bottomrule
   \end{tabular}
-\end{table*}
+\end{table}
 
 \textbf{Session protocol.} Each session was conducted individually and followed a
 structured script. The research team comprised three members: one researcher dedicated
@@ -340,7 +336,7 @@ desirability in the questionnaire. Table~\ref{tab:activity-matrix} maps the domi
 form of support each participant required across the seven activities
 (\(\bullet\)~autonomous; \(\triangle\)~local mediation; \(\times\)~structural barrier).
 
-\begin{table*}[t]
+\begin{table}[t]
   \caption{Dominant interaction pattern by participant and activity.
            \(\bullet\)~=~predominantly autonomous;
            \(\triangle\)~=~local mediation at task onset or at a specific moment;
@@ -366,7 +362,7 @@ form of support each participant required across the seven activities
       Autonomous reading; system recognition failure for letter~O. \\
     \bottomrule
   \end{tabular}
-\end{table*}
+\end{table}
 
 \textbf{Reflective inquiry.} P1 asked whether the tool was Brazilian or American, spelt
 out his own name in the alphabet game, questioned the double meaning of ``Sol'' --- a
@@ -448,7 +444,7 @@ whether LIBRAS content is present.
 
 \subsection{What UES-Br Added --- and Where It Fell Short}
 
-\begin{table*}[t]
+\begin{table}[t]
   \caption{Descriptive UES-Br means by participant. PU and RW are reported as raw means
   and as corrected means after inverting negatively worded items ($6 - \text{score}$).}
   \label{tab:uesbr}
@@ -465,7 +461,7 @@ whether LIBRAS content is present.
     P6 & 3.29 & 3.38 & 2.88 & 3.60 & 3.30 & 3.30 \\
     \bottomrule
   \end{tabular}
-\end{table*}
+\end{table}
 
 The UES-Br data in Table~\ref{tab:uesbr} did not simply confirm or contradict the
 observations. It clarified some cases, complicated others, and exposed limits in the
@@ -640,7 +636,7 @@ participation, repeated sessions, and instrument adaptation are the next steps -
 as standard qualitative caveats, but as research directions that this study defines
 precisely enough to act on.
 
-\bibliographystyle{IEEEtran}
+\bibliographystyle{splncs04}
 \bibliography{references}
 
 \end{document}
