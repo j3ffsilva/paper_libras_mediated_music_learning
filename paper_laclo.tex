@@ -10,7 +10,7 @@
 \begin{document}
 
 \title{UES-Br and LIBRAS-Mediated Music Learning: Exploratory Qualitative Study
-of Interaction and Engagement of Deaf Children with LIBRAS Academy}
+of Deaf Adolescents' Interaction with LIBRAS Academy}
 
 \author{
   \IEEEauthorblockN{%
@@ -30,79 +30,131 @@ of Interaction and Engagement of Deaf Children with LIBRAS Academy}
 \maketitle
 
 \begin{abstract}
-This paper reports a qualitative exploratory study on the interaction and engagement
-of four deaf children, aged 12 to 13 years, with LIBRAS Academy, a digital interface
-for music education mediated by Brazilian Sign Language (LIBRAS). The study continues
-and expands previous work by Benites on AI-assisted music education for deaf children
-by focusing on situated interaction, accessibility, and engagement evaluation through
-UES-Br. The tests were conducted on April 6, 2026, at CeAC, within DERDIC at the
-Pontifical Catholic University of São Paulo (PUC-SP), an institutional environment
-dedicated to deaf education, accessibility, and hearing, voice, and language support.
-The empirical corpus comprises a semi-structured testing protocol, observational
-annotations from individual sessions, and responses to the Brazilian Portuguese
-adaptation of the User Engagement Scale (UES-Br). Results suggest that
-LIBRAS-mediated musical interfaces may support access to music learning while also
-contributing to broader processes of educational inclusion, including literacy,
-communication practice, autonomy, and interdisciplinary learning. However, engagement
-varied substantially across participants and was influenced by visual organization,
-task rhythm, mediation, prior repertoire, and the semantic accessibility of the
-evaluation instrument.
+This paper reports a qualitative exploratory study of how six deaf adolescents, aged
+13 to 15, interacted with LIBRAS Academy, a digital interface for music education
+mediated by Brazilian Sign Language (LIBRAS). The study was conducted on April 6,
+2026, at CeAC/DERDIC/PUC-SP, an institutional environment dedicated to deaf education,
+accessibility, and hearing, voice, and language support. The empirical corpus comprises
+a semi-structured first-contact testing protocol, observational annotations from
+individual sessions, open-ended comments, and responses to the Brazilian Portuguese
+adaptation of the User Engagement Scale (UES-Br). The analysis characterizes situated
+interaction patterns, interface and mediation barriers, and the interpretive limits of
+UES-Br in a mediated accessibility context. Results show that participants could
+complete the core activities and displayed different forms of engagement, including
+reflective exploration, efficient task completion, self-correction, selective
+persistence, and image-based progression under reading constraints. Barriers emerged
+around task onboarding, visual layout, game pace, scroll mechanics, recognition
+reliability, and abstract questionnaire vocabulary. Correcting negatively worded
+UES-Br items was essential for interpretation, but the questionnaire remained
+dependent on mediation and vulnerable to semantic difficulty and possible
+acquiescence. The paper contributes situated empirical evidence about
+LIBRAS-mediated music learning and a methodological reflection on using UES-Br with
+deaf adolescents.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Deaf children; LIBRAS; music education; UES-Br; inclusive learning technologies.
+Deaf adolescents; LIBRAS; music education; UES-Br; inclusive learning technologies;
+accessibility evaluation.
 \end{IEEEkeywords}
 
 \section{Introduction}
 
-Music education for deaf children requires a conceptual and methodological shift from
-hearing-centered assumptions toward multimodal forms of musical perception, expression,
-and learning. Music may be approached through visual structures, embodied gesture,
-tactile or proprioceptive cues, rhythmic organization, and shared social activity.
-Digital educational interfaces can widen these possibilities when they are designed
-around deaf students' linguistic and perceptual repertoires rather than treating
-accessibility as an accessory to a primarily auditory experience.
+For many deaf students, music education is still organized around sounds that are
+expected to be heard, named, reproduced, and evaluated through hearing-centered
+pedagogical routines. Yet musical experience can also be approached through visual
+patterns, rhythm, gesture, color, memory, embodied movement, and shared symbolic
+activity. Digital learning environments can make these forms of access more concrete,
+but only when they are designed and evaluated from the communicational repertoires of
+deaf learners. The core difficulty is therefore not simply the absence of music software
+for deaf students. It is the lack of situated evidence about how deaf students actually
+interpret, negotiate, and remain engaged with such interfaces when they encounter them
+in real educational settings.
 
-The present study investigates LIBRAS Academy, a digital interface designed for musical
-learning mediated by Brazilian Sign Language (LIBRAS). It continues and expands previous
-studies developed by Benites on music education for deaf children with the support of
-artificial intelligence and gesture recognition~\cite{benites2024,benites2025}. Whereas
-those works establish the technological and pedagogical basis for associating musical
-notes, colors, signs, and interactive feedback, this paper examines how deaf child users
-actually interact with the interface and how their engagement can be interpreted through
-behavioral observation and UES-Br responses.
+This problem has practical and methodological consequences. If accessible educational
+interfaces are evaluated mainly through design intentions, technical demonstrations, or
+generic usability assumptions, researchers may overestimate their accessibility. The
+presence of sign language, visual elements, or gesture recognition does not guarantee
+that instructions are clear, that task rhythm fits the user, that visual layout supports
+interpretation, or that a post-use questionnaire is linguistically accessible. In this
+context, engagement is also difficult to interpret. A participant may complete tasks
+efficiently without wanting to continue, persist in one activity while rejecting another,
+or report positive impressions while requiring extensive mediation. For inclusive
+learning technologies, these differences matter because they affect not only interface
+acceptance, but also the reliability of the evidence used to improve the system.
 
-The usability tests and observational sessions were conducted on April 6, 2026, at CeAC
-(Centro de Audição na Criança), within DERDIC (Divisão de Educação e Reabilitação dos
-Distúrbios da Comunicação), at the Pontifical Catholic University of São Paulo (PUC-SP),
-in São Paulo, Brazil. DERDIC is an educational and clinical environment historically
-associated with deaf education, accessibility practices, LIBRAS-related activities,
-employability initiatives for deaf people, and support for hearing, voice, and language
-development. CeAC forms part of this institutional ecology through pediatric hearing
-care and rehabilitation practices. This context is relevant because accessible educational
-technologies for deaf children are best examined in environments where language access,
-family mediation, hearing history, and inclusive education are already part of the
-institutional routine.
+Previous work has addressed parts of this challenge. Benites' research on music
+education for deaf children proposed and developed LIBRAS Academy, an interface that
+combines musical notes, colors, Brazilian Sign Language (LIBRAS), and artificial
+intelligence-supported gesture interaction~\cite{benites2024,benites2025}. Related
+research on assistive educational technology grounded in semiotic theory has shown how
+images, written language, and LIBRAS signs can be articulated in learning software for
+deaf and hearing children~\cite{rocha2016,rocha2023uais}. In HCI, the User Engagement
+Scale (UES) and its Brazilian Portuguese adaptation, UES-Br, provide a structured way
+to describe perceived engagement across dimensions such as focused attention,
+perceived usability, aesthetic appeal, and reward~\cite{obrien2010ues,miranda2021uesbr}.
+These contributions are important, but they leave open a situated empirical question:
+what happens when deaf adolescent users interact with a LIBRAS-mediated music learning
+interface for the first time, and when an engagement instrument designed for general
+users is administered in a mediated accessible evaluation setting?
 
-The study also treats LIBRAS-mediated musical learning as potentially relevant beyond
-music education alone. Automated LIBRAS mediation and AI-assisted musical interaction
-may support literacy-related practices, communication, autonomy, visual attention,
-symbolic association, and interdisciplinary integration for deaf students. These
-possibilities are approached cautiously. The present article does not measure learning
-gains or long-term educational outcomes; it analyzes first-contact interaction and
-engagement patterns in an exploratory qualitative setting.
+The research gap addressed in this paper is therefore twofold. Empirically, there is
+still limited evidence, especially in the Brazilian and Latin American context, on how
+deaf students interact with sign-language-mediated music learning interfaces in
+realistic first-contact sessions. Methodologically, little is known about how UES-Br
+responses should be interpreted when the respondents are deaf adolescents and the
+questionnaire itself may require translation, explanation, or adult mediation. This
+paper does not claim to measure learning gains, validate UES-Br for this population, or
+provide statistical evidence of platform effectiveness. Instead, it offers an
+exploratory qualitative account of interaction and engagement as situated phenomena.
 
-The research question guiding the paper is: how do deaf child users interact with and
-become engaged in a sign-language-mediated music learning interface, and how can UES-Br
-responses be interpreted alongside observed behavior? Four deaf children aged between 12
-and 13 participated in individual testing sessions involving free exploration, structured
-game tasks, and a mediated UES-Br questionnaire. The contribution is empirical, by
-characterizing participant-level interaction patterns, and methodological, by discussing
-the limits and usefulness of UES-Br in an accessible UX evaluation with deaf children.
+The study was conducted on April 6, 2026, at CeAC (Centro de Audição na Criança),
+within DERDIC (Divisão de Educação e Reabilitação dos Distúrbios da Comunicação), at
+the Pontifical Catholic University of São Paulo (PUC-SP), in São Paulo, Brazil. Six
+deaf adolescents aged 13 to 15 participated in individual first-contact sessions with
+LIBRAS Academy, followed by a mediated UES-Br questionnaire. The analysis is guided by
+three research questions:
+
+\begin{itemize}
+  \item RQ1: How do deaf adolescents aged 13 to 15 interact with LIBRAS Academy in
+  individual first-contact sessions?
+  \item RQ2: What forms of engagement are suggested by triangulating behavioral
+  observation, UES-Br responses, and open-ended feedback?
+  \item RQ3: How do mediation conditions and linguistic accessibility affect the
+  interpretability of UES-Br responses in this context?
+\end{itemize}
+
+The remainder of the paper is organized as follows. Section II presents the theoretical
+background and related work on LIBRAS-mediated music education, sign-language-based
+educational interfaces, engagement measurement, and accessible UX evaluation with young
+participants. Section III describes the study context, participants, protocol, UES-Br
+scoring, and qualitative analysis procedure. Section IV reports the results, beginning
+with observed interaction patterns and interface barriers before treating UES-Br as
+complementary evidence. Section V discusses the empirical and methodological
+implications of the findings, and Section VI concludes with limitations and directions
+for future work.
 
 \section{Theoretical Background and Related Work}
 
-\subsection{Continuity with Benites' Work and Deaf Music Education}
+\subsection{Digital Technologies for Deaf and Hard-of-Hearing Learners}
+
+Digital technologies for deaf and hard-of-hearing (DHH) learners have been explored in
+areas such as language learning, communication support, literacy, classroom participation,
+and family-mediated sign language practice. Recent HCI work emphasizes that these systems
+must be understood not only as technical artifacts, but as tools embedded in linguistic,
+family, educational, and accessibility contexts~\cite{zhao2025dhhchildren}. Studies with
+young deaf users also show that requirements and usability cannot be inferred only from
+adult expectations: prototyping and evaluation need to account for children's language
+development, mediation, attention, and ways of expressing difficulty~\cite{korte2014requirements}.
+
+Sign-language-based educational tools illustrate this challenge. For example, interactive
+sign language applications can support communication and learning, but their value depends
+on whether children and families can interpret signs, feedback, visual prompts, and task
+goals in context~\cite{chuan2016smartsignplay}. For the present study, this literature
+helps delimit the problem: accessibility is not a static property of an interface. It is
+produced during use, as learners coordinate visual information, written language, signs,
+body movement, mediation, and task expectations.
+
+\subsection{LIBRAS-Mediated Music Learning}
 
 Benites' research on music education for deaf children provides the immediate foundation
 for this study~\cite{benites2024,benites2025}. His work frames music education as a
@@ -113,19 +165,13 @@ sequenced, and interpreted. LIBRAS Academy inherits this orientation by organizi
 content through visual and sign-based interaction.
 
 The present study extends that line of work by shifting the analytical focus from the
-development and educational promise of the interface to the situated conduct of child
+development and educational promise of the interface to the situated conduct of adolescent
 users. This shift is important because the success of an accessible educational technology
-depends not only on its conceptual design, but also on whether children can understand
+depends not only on its conceptual design, but also on whether learners can understand
 instructions, interpret visual feedback, manage task rhythm, request mediation, and relate
-the interface to their existing communicational repertoires.
-
-Music learning may also function as an interdisciplinary site for broader educational
-inclusion. When children manipulate signs, letters, musical note names, colors, visual
-sequences, and feedback, they practice relations that can support literacy, categorical
-reasoning, memory, attention to symbolic systems, and communicational autonomy. The
-present data cannot demonstrate such outcomes longitudinally, but the observed behaviors
-show why music-mediated interaction can be relevant to inclusive learning technologies
-beyond the musical domain.
+the interface to their existing communicational repertoires. The study therefore treats
+music learning as a site for observing multimodal interaction, not as an outcome measured
+through musical achievement.
 
 \subsection{Sign-Language-Mediated Interfaces and Semiotic Framing}
 
@@ -136,14 +182,14 @@ and LIBRAS signs can be articulated in educational software to foster communicat
 learning. For LIBRAS Academy, this implies that a musical note, a color, a handshape, a
 written label, and a feedback message should not be treated as separate interface
 resources. They form a network of signs whose educational value depends on whether
-children can establish meaningful relations among them during activity.
+learners can establish meaningful relations among them during activity.
 
-This semiotic framing is useful for interpreting the empirical observations. When P1
-questions the national origin of the signs, when P2 is affected by the spatial arrangement
-of notes, when P3 corrects her own error in a memory task, or when P4 persists until a
-progress bar is filled, each behavior indicates a relation among sign systems, interface
-feedback, and user expectation. Accessibility is therefore not limited to the presence of
-LIBRAS, but depends on the coherence of the whole multimodal arrangement.
+This semiotic framing is useful for interpreting the empirical observations. When a
+participant questions the national origin of signs, is affected by the spatial arrangement
+of notes, corrects an error in a memory task, or persists until a progress bar is filled,
+each behavior indicates a relation among sign systems, interface feedback, and user
+expectation. Accessibility is therefore not limited to the presence of LIBRAS, but depends
+on the coherence of the whole multimodal arrangement.
 
 \subsection{Engagement, UES, and UES-Br}
 
@@ -159,322 +205,387 @@ visual appeal, curiosity, and the sense that an activity was worthwhile.
 The UES-Br translation and cross-cultural adaptation by Miranda, Li, and
 Darin~\cite{miranda2021uesbr} is important for Brazilian HCI because it provides a
 validated Portuguese-language version of the instrument. In this study, UES-Br was
-selected because participants were Brazilian children and because using an English
+selected because participants were Brazilian adolescents and because using an English
 instrument would threaten validity. Nevertheless, translation into Portuguese does not by
-itself guarantee accessibility for deaf children. Several items contain vocabulary and
-abstraction levels that may be difficult for children aged 12 to 13, particularly in a
-mediated testing situation involving LIBRAS, written Portuguese, and adult explanation.
+itself guarantee accessibility for deaf participants. Several items contain vocabulary and
+abstraction levels that may be difficult in a mediated testing situation involving LIBRAS,
+written Portuguese, and adult explanation.
 
 This cautious treatment follows Doherty and Doherty's argument that engagement research
 should use a diverse methodological toolkit and avoid confusing models of engagement with
-engagement itself~\cite{doherty2018engagement}. In the context of deaf children,
-engagement must be inferred from the relation among self-report, behavioral persistence,
-requests for help, visual attention, emotional response, communication with mediators, and
-the degree to which the task structure remains understandable.
+engagement itself~\cite{doherty2018engagement}. In this paper, UES-Br responses are
+treated as evidence of perceived experience, while observational notes are treated as
+evidence of situated behavior. Their convergence or divergence is analytically useful
+precisely because they do not measure the same phenomenon in the same way.
 
-\subsection{Children, Metacognition, and Accessible UX Evaluation}
+\subsection{Young Participants, Reflection, and Accessible UX Evaluation}
 
-The study also draws on literature concerning children's capacity to monitor and express
-their learning processes. Studies on metacognition, self-perception, and feedback emphasize
-that children's evaluation of learning is shaped by affect, curiosity, anxiety, motivation,
-and opportunities to use feedback to regulate action~\cite{rocha2023metacog,vanloon2021}.
+The study also draws on literature concerning how young participants monitor and express
+their learning experiences. Studies on metacognition, self-perception, and feedback
+emphasize that learners' evaluation of an activity is shaped by affect, curiosity,
+anxiety, motivation, and opportunities to use feedback to regulate action~\cite{rocha2023metacog,vanloon2021}.
 These ideas matter because the participants were asked not only to complete tasks but also
 to judge whether the experience was confusing, enjoyable, frustrating, rewarding, or worth
 recommending.
 
-Research with deaf and hard-of-hearing learners further requires attention to how
-reflection is elicited. Interviews, questionnaires, and think-aloud approaches must be
-adapted to the communicational conditions of deaf participants~\cite{albalhareth2022}. In
-this study, a conventional spoken think-aloud protocol was inappropriate. Observation,
-LIBRAS mediation, written clarification, and post-task responses were therefore combined.
-Accessible UX evaluation appears here as an interactional arrangement involving child,
-interface, translator, mediator, and sometimes family member, rather than as an instrument
+Research with DHH learners further requires attention to how reflection is elicited.
+Interviews, questionnaires, and think-aloud approaches must be adapted to the
+communicational conditions of deaf participants~\cite{albalhareth2022}. In this study, a
+conventional spoken think-aloud protocol was inappropriate. Observation, LIBRAS mediation,
+written clarification, and post-task responses were therefore combined. Accessible UX
+evaluation appears here as an interactional arrangement involving participant, interface,
+translator, mediator, and sometimes family member, rather than as an instrument
 administered after use.
 
 \section{Methodology}
 
-This study is qualitative and exploratory. Its purpose is to describe how four deaf
-children interacted with LIBRAS Academy during first-contact testing sessions, not to
-measure learning gains or statistically validate the platform. The methodological
-orientation combined individual semi-structured sessions, behavioral observation, task
-progression notes, mediated post-task feedback, and descriptive interpretation of UES-Br
-responses.
+This study is qualitative and exploratory. Its purpose is to describe how deaf
+adolescents interacted with LIBRAS Academy during individual first-contact sessions and
+how their perceived experience, reported through UES-Br, can be interpreted alongside
+observational evidence. The study does not measure learning gains, statistically validate
+the platform, or validate UES-Br for deaf adolescents. Instead, it characterizes situated
+patterns of interaction, mediation, accessibility barriers, and engagement-related
+behavior in a small empirical corpus.
 
-The tests were conducted on April 6, 2026, at CeAC, DERDIC, PUC-SP. The setting is
-methodologically significant because DERDIC combines deaf education, accessibility
-services, LIBRAS-related practices, and interdisciplinary support in hearing, voice, and
-language. The participant profile is therefore strategically relevant: the children were
-not generic users of an educational game, but deaf learners situated in a specialized
-environment where communication, family mediation, hearing history, and inclusive education
-are part of everyday institutional work.
+The tests were conducted on April 6, 2026, at CeAC (Centro de Audição na Criança),
+within DERDIC (Divisão de Educação e Reabilitação dos Distúrbios da Comunicação), at
+PUC-SP, in São Paulo, Brazil. The setting is methodologically significant because DERDIC
+combines deaf education, accessibility services, LIBRAS-related practices, and
+interdisciplinary support in hearing, voice, and language. The participants were
+therefore not generic users of an educational game, but deaf learners situated in an
+institutional environment where communication, family mediation, hearing history, and
+inclusive education are part of everyday practice.
 
-Participants were four deaf children between 12 and 13 years old. The available
-observational records identify them by name, but this article uses participant codes P1 to
-P4. The children differed in hearing profile, school year, LIBRAS familiarity, prior music
-experience, and prior familiarity with artificial intelligence. These differences shaped
-how each participant approached the interface, interpreted tasks, requested help, and
-responded to the questionnaire.
+Six deaf adolescents aged 13 to 15 participated in the study. The original observational
+records identify participants by first name, but this article uses only participant codes
+P1 to P6. Participants differed in hearing profile, school year, LIBRAS history, prior
+music experience, and familiarity with artificial intelligence. These differences are
+analytically relevant because they shaped how each participant approached the interface,
+interpreted instructions, requested help, and responded to the post-use questionnaire.
 
-\begin{table}[htbp]
+\begin{table*}[t]
   \caption{Participant profiles reconstructed from testing notes.}
   \label{tab:participants}
-  \begin{tabular}{p{0.06\linewidth} p{0.35\linewidth} p{0.47\linewidth}}
+  \footnotesize
+  \begin{tabular}{@{}p{0.05\linewidth} p{0.13\linewidth} p{0.18\linewidth} p{0.18\linewidth} p{0.34\linewidth}@{}}
     \toprule
-    \textbf{Code} & \textbf{Profile} & \textbf{Analytical relevance} \\
+    \textbf{Code} & \textbf{Age / school} & \textbf{Hearing profile} & \textbf{LIBRAS / music} & \textbf{Analytical relevance} \\
     \midrule
-    P1 & Male, born 2011 &
-      Long-term LIBRAS use; no prior music study; initially rejected music;
-      reflective and verbally inquisitive interaction. \\[4pt]
-    P2 & Male, born 2011 &
-      Complete deafness; LIBRAS learned in a deaf family context; no music study;
-      fast, intuitive, but limited voluntary extension. \\[4pt]
-    P3 & Female, born 2011 &
-      Asymmetric hearing loss; four to five years of LIBRAS; some music experience;
-      fluent progression and self-correction. \\[4pt]
-    P4 & Female, born 2012 &
-      Complete deafness after hearing variation; LIBRAS since childhood; brief prior
-      music experience; rapid, selective, pace-sensitive engagement. \\
+    P1 & 14; 1st year high school & Moderate hearing loss &
+      LIBRAS since 2015; no prior music study &
+      Reflective and exploratory; initially rejected music but asked conceptual and technical questions. \\
+    P2 & 14; 1st year high school & Complete deafness &
+      LIBRAS learned in deaf family context; no prior music study &
+      Efficient task completion, sensitivity to task pace, limited voluntary continuation. \\
+    P3 & 14; 9th grade & Asymmetric hearing loss &
+      Four to five years of LIBRAS; some prior music experience &
+      Fluent progression, self-correction, and comparatively autonomous interaction. \\
+    P4 & 13; 9th grade & Complete deafness after prior hearing variation &
+      LIBRAS since childhood; brief prior music experience &
+      Rapid, selective, pace-sensitive engagement; persisted in progress-based activity. \\
+    P5 & 15; 9th grade & Partial hearing &
+      Three years of LIBRAS; no formal music study &
+      Relied strongly on images; possible acquiescence/social desirability in questionnaire responses. \\
+    P6 & 15; 1st year high school & Partial hearing &
+      Long-term LIBRAS use; likes music &
+      Greater ease with written Portuguese; mostly autonomous task interpretation. \\
     \bottomrule
   \end{tabular}
-\end{table}
+\end{table*}
 
-The protocol was reconstructed from the testing script. Each session began with profile
-questions answered by the responsible adult and, when possible, by the child. The
-questions addressed school level, hearing profile, variation in hearing across life,
-familiarity with LIBRAS, familiarity with music, instrumental practice, and familiarity
-with artificial intelligence. The main task block included seven activities: free
-exploration from the home screen; the ``Alphabet in LIBRAS'' game; ``What Are the Musical
-Notes?''; ``Conductor of Notes''; ``Musical Rainbow''; ``Note Collector''; and a final
-free-choice task. The protocol allowed participants to request help at any point and to
-indicate when they wanted to move to the next activity.
+Each individual session followed a semi-structured protocol reconstructed from the testing
+script and manual annotations. Sessions began with profile questions answered by the
+responsible adult and, when possible, by the participant. The main task block included
+seven activities: free exploration from the home screen; the ``Alphabet in LIBRAS'' game;
+``What Are the Musical Notes?''; ``Conductor of Notes''; ``Musical Rainbow''; ``Note
+Collector''; and a final free-choice task. Participants could request help at any point
+and could indicate when they wanted to move to the next activity. The protocol therefore
+combined task structure with opportunities for mediation, repetition, and participant-led
+continuation.
 
-Data collection combined screen recording, observational annotation, task progression
-notes, mediation records, and a post-use UES-Br questionnaire administered through Google
-Forms with support from a LIBRAS translator and, when necessary, a responsible adult.
-The UES-Br responses were analyzed descriptively and qualitatively. Because the sample is
-small and because several items required explanation, the scale is not used for inferential
-claims. Instead, it supports triangulation with observed behavior.
+The empirical corpus analyzed in this paper comprises manual observational annotations,
+task progression notes, mediation records, open-ended comments, and post-use UES-Br
+responses exported from Google Forms. The UES-Br was administered after the interaction
+tasks with support from a LIBRAS translator and, when necessary, a responsible adult.
+Although screen recording was part of the broader documentation protocol, the present
+analysis relies on the observational notes and questionnaire records; audiovisual material
+is not treated here as a fully coded corpus.
 
-\begin{table}[htbp]
-  \caption{Descriptive UES-Br response means by participant. PU includes negatively
-  worded items and is interpreted cautiously.}
+The UES-Br responses were analyzed descriptively. The instrument contains 30 Likert items
+grouped into Focused Attention (FA), Perceived Usability (PU), Aesthetic Appeal (AE), and
+Reward (RW), plus one open-ended prompt. FA and AE were computed as simple item means. PU
+was computed both as a raw mean and as a corrected mean, because PU1--PU6 and PU8 are
+negatively worded and must be inverted using $6 - x$ before interpretation. RW was also
+computed both as a raw mean and as a corrected mean, because RW3 is negatively worded.
+All scores in Table~\ref{tab:uesbr} were audited visually against the original PDF exports
+of the Google Forms responses. Because the sample is small and several items required
+explanation, UES-Br is not used for inferential claims. It is treated as complementary
+evidence of perceived experience.
+
+\begin{table*}[t]
+  \caption{Descriptive UES-Br response means by participant. PU and RW are reported both as raw means and corrected means after inverting negatively worded items.}
   \label{tab:uesbr}
-  \begin{tabular}{lcccc}
+  \begin{tabular}{lcccccc}
     \toprule
-    \textbf{Code} & \textbf{FA} & \textbf{PU} & \textbf{AE} & \textbf{RW} \\
+    \textbf{Code} & \textbf{FA} & \textbf{PU raw} & \textbf{PU corr.} & \textbf{AE} & \textbf{RW raw} & \textbf{RW corr.} \\
     \midrule
-    P1 & 3.86 & 3.00 & 3.00 & 3.50 \\
-    P2 & 3.00 & 3.12 & 3.80 & 4.00 \\
-    P3 & 3.43 & 3.62 & 3.80 & 4.20 \\
-    P4 & 2.29 & 2.12 & 1.80 & 2.90 \\
+    P1 & 3.86 & 3.00 & 3.25 & 3.00 & 3.50 & 3.50 \\
+    P2 & 3.00 & 3.12 & 3.12 & 3.80 & 4.00 & 3.80 \\
+    P3 & 3.43 & 3.62 & 2.62 & 3.80 & 4.20 & 4.00 \\
+    P4 & 2.29 & 2.12 & 4.12 & 1.80 & 2.90 & 2.70 \\
+    P5 & 3.43 & 1.62 & 4.88 & 5.00 & 4.50 & 4.90 \\
+    P6 & 3.29 & 3.38 & 2.88 & 3.60 & 3.30 & 3.30 \\
     \bottomrule
   \end{tabular}
-\end{table}
+\end{table*}
 
-Ethical considerations are central because the study involves children, deaf participants,
-and interaction data. The research design established voluntary written agreement by users
+The qualitative analysis used a hybrid thematic procedure guided by the research
+questions and refined through close reading of the annotations. Observed events were
+organized by participant, activity, type of event, and supporting evidence. The main
+codes were: interface barriers; persistence or voluntary continuation; curiosity and
+exploration; problems with the evaluation instrument; and mediation or social context.
+The analysis does not claim theoretical saturation. Instead, it identifies recurring
+patterns and contrastive cases across six first-contact sessions. In the results, UES-Br
+responses and observations are triangulated as distinct forms of evidence: the former
+captures perceived experience, while the latter captures situated behavior.
+
+Ethical considerations are central because the study involves minors, deaf participants,
+and interaction data. The research design established voluntary agreement by participants
 and/or guardians, supervision by a responsible adult, minimized distractions, a researcher
-dedicated to interaction with the child, a researcher dedicated to textual and audiovisual
-documentation, and a LIBRAS translator when needed. Before submission, the authors should
-insert the formal ethics approval number, consent and assent procedures, and data
-protection details.
+dedicated to interaction with the participant, a researcher dedicated to textual and
+audiovisual documentation, and a LIBRAS translator when needed. The reporting preserves
+participant anonymity through the use of codes P1--P6.
 
 \section{Results}
 
-\subsection{P1: Reflective Exploration, Strong Task Performance, and Questionnaire Barriers}
+\subsection{Participant Context and Session Overview}
 
-P1's session lasted 14 minutes and 36 seconds, the longest among the four. The profile
-notes indicate long-term LIBRAS experience and no prior music study, with an explicitly
-negative initial attitude toward music. This makes P1's interaction particularly
-informative: engagement was not simply a continuation of prior musical interest. During
-the alphabet task, P1 explored several letters and asked whether the tool was from Brazil
-or the United States, questioning the national origin of the system. This question suggests
-a reflective stance toward the cultural specificity of sign systems. P1 also read the tool
-instructions, indicating reliance on written support as well as LIBRAS mediation.
+All six participants completed the core sequence of LIBRAS Academy activities in a
+single first-contact session. Session duration varied from 7 minutes and 25 seconds
+(P4) to 18 minutes and 9 seconds of practice time (P5), reflecting differences in pace,
+reading fluency, curiosity, and need for mediation rather than a simple gradient of
+success or failure. The participants also differed in prior music experience: P1, P2,
+and P5 reported no previous music study, P3 and P4 reported some prior exposure, and
+P6 reported liking music.
 
-In the musical notes task, P1 needed mediation at the beginning, partly because the notes
-indicate the absence of camera use in that moment. After support, he correctly completed
-the sequence and later questioned the polysemy of ``Sol,'' showing attention to the
-relation between musical nomenclature, ordinary language, and sign interpretation. In
-``Conductor of Notes,'' he again required initial mediation but then acted autonomously.
-His curiosity also extended to the hardware: he commented that the notebook was faster
-than his own and briefly entered the computer settings. This was not merely off-task
-behavior; it revealed engagement with the technical conditions enabling the activity.
+Table~\ref{tab:activity-matrix} summarizes the dominant form of support observed
+across the activity sequence. The codes are descriptive rather than scores:
+\(\bullet\) indicates predominantly autonomous progression, \(\triangle\) indicates
+local mediation at task onset or at specific moments, and \(\times\) indicates a
+structural barrier that interfered with the activity, such as layout, scroll, pace, or
+recognition problems.
 
-P1 performed ``Musical Rainbow'' and ``Note Collector'' with ease. The mediators adjusted
-zoom in one activity, which is accessibility-relevant because visual scale affected
-comfortable use. P1 clicked to view a sequence again and navigated both ascending and
-descending note orders, indicating strategic repetition. However, the UES-Br administration
-was difficult. He required multiple explanations, did not understand expressions such as
-``I let myself be carried away,'' asked what LIBRAS Academy referred to, and had doubts
-about ``aesthetically pleasing'' and ``gratifying.'' He stated that he liked writing but
-did not like marking scales. For P1, the interface tasks appeared more accessible than the
-evaluation instrument.
+\begin{table*}[t]
+  \caption{Dominant interaction pattern by participant and activity.}
+  \label{tab:activity-matrix}
+  \centering
+  \footnotesize
+  \begin{tabular}{@{}lccccccc p{0.30\linewidth}@{}}
+    \toprule
+    Participant & Explore & Alphabet & Notes & Conductor & Rainbow & Collector & Free choice & Main observed issue \\
+    \midrule
+    P1 & \(\bullet\) & \(\bullet\) & \(\triangle\) & \(\triangle\) & \(\triangle\) & \(\bullet\) & \(\bullet\) & Needed initial mediation and zoom adjustment; questionnaire language was harder than the tasks. \\
+    P2 & \(\bullet\) & \(\triangle\) & \(\bullet\) & \(\triangle\) & \(\times\) & \(\triangle\) & \(\triangle\) & Layout and game pace affected interpretation; voluntary continuation was limited. \\
+    P3 & \(\bullet\) & \(\triangle\) & \(\bullet\) & \(\bullet\) & \(\bullet\) & \(\bullet\) & \(\bullet\) & Mostly fluent progression, with self-correction during free-choice play. \\
+    P4 & \(\bullet\) & \(\triangle\) & \(\bullet\) & \(\bullet\) & \(\triangle\) & \(\bullet\) & \(\bullet\) & Rapid interaction and impatience with slower rhythms; selective persistence in Collector. \\
+    P5 & \(\triangle\) & \(\triangle\) & \(\triangle\) & \(\bullet\) & \(\times\) & \(\bullet\) & \(\triangle\) & Reading difficulty, image-based orientation, scroll problem, and possible acquiescence in evaluation. \\
+    P6 & \(\bullet\) & \(\times\) & \(\triangle\) & \(\bullet\) & \(\bullet\) & \(\bullet\) & \(\bullet\) & Strong written Portuguese; recognition problem with letter O and brief difficulty with Sol. \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
 
-\subsection{P2: Efficient Interaction and Limited Voluntary Extension}
+\subsection{Observed Interaction Patterns}
 
-P2 completed the session in 8 minutes and 49 seconds. The profile notes describe complete
-deafness, LIBRAS learned mainly through family because both parents are deaf, and no prior
-music study. Compared with P1, P2's interaction was less discursive in the notes but
-showed quick practical adaptation. In the alphabet game, he progressed through letters with
-slight difficulty on some items, but these difficulties did not interrupt task progression.
+The first pattern was reflective exploration. P1 asked whether the tool was from Brazil
+or the United States, explored letters from his name, questioned the polysemy of
+``Sol,'' and even attended to the computer itself by commenting on the notebook's speed
+and entering system settings. This behavior shows that engagement can include inquiry
+about the cultural, linguistic, and technical conditions of the activity, not only task
+completion.
 
-In the musical notes task, P2 remembered Do, Re, and Mi and then correctly identified Fa
-and Sol. In ``Conductor of Notes,'' he needed some indication to understand the task, but
-the need for mediation appears limited to task onset. In ``Musical Rainbow,'' the notes
-record both ease and an initial difficulty because the notes were not aligned on the same
-line. This is an important accessibility observation: visual-spatial organization affected
-interpretation even when the task concept was understood. In ``Note Collector,'' P2
-perceived the game as very slow and tried clicking to accelerate the process, while the
-observer described the interaction as intuitive.
+The second pattern was practical efficiency. P2 usually understood the goal of the
+activities quickly and advanced with little disruption. He remembered Do, Re, and Mi and
+then identified Fa and Sol. However, efficiency did not always lead to extension: P2 did
+not initially want to continue in the final free-choice moment and proceeded only after
+encouragement.
 
-The final free-choice activity is analytically significant because P2 did not want to
-explore more on his own. He continued only after mediator encouragement. His UES-Br
-responses align with this mixed pattern: several reward items were positive, but focused
-attention was uneven. P2 therefore illustrates efficient task engagement without strong
-voluntary continuation. In inclusive educational technology, this distinction matters
-because completion alone does not necessarily indicate sustained interest or learner
-autonomy.
+The third pattern was autonomous interpretation supported by written Portuguese fluency.
+P6 showed the strongest ease with written Portuguese, understood the alphabet and
+Collector activities rapidly, and generally progressed without extensive mediation. His
+main difficulties were localized: a system recognition problem with the letter O and a
+brief hesitation around Sol. This case is analytically important because the most visible
+barrier was partly produced by the system, not by the participant's understanding.
 
-\subsection{P3: Broad Fluency, Self-Correction, and Stable Positive Engagement}
+The fourth pattern was self-monitoring and correction. P3 showed the clearest case:
+during the memory game, she initially made an error, perceived it, and corrected it.
+She also continued in ``Build the Word'' with good performance. This matters because
+the strongest evidence of engagement in these sessions was not merely positive affect;
+it was the participant's ability to notice, repair, and continue.
 
-P3's session lasted 10 minutes and 52 seconds. Her profile indicates asymmetric hearing
-loss, four to five years of LIBRAS experience, deaf cousins, and some previous music study.
-Among the four participants, P3 showed the most consistently fluent progression across
-tasks. In the alphabet game, she moved through a long sequence of letters and needed
-mediation only for specific items. This pattern indicates that mediation was local rather
-than structural: she understood the activity but needed help at particular moments.
+The fifth pattern was selective persistence. P4 was the fastest participant and
+sometimes acted impatiently, especially in slower or more repetitive tasks. Yet she
+continued playing ``Note Collector'' until the progress bar was completed. P5 also
+persisted in the practice sequence for the longest duration, despite reading difficulty
+and a documented impression that he might have been trying to please the researchers.
+These cases caution against equating fast completion, slow completion, or high ratings
+with engagement in a direct way.
 
-P3 performed the musical notes tasks with ease. After camera use, the notes state that
-participants seemed to think it was still filming, an observation that points to the need
-for clear communication of camera state and privacy-relevant system behavior. P3 correctly
-completed the musical note sequences and was repeatedly described as acting easily and
-without incident. Her free-choice activity provides the strongest evidence of self-regulated
-engagement: in the memory game, she initially made an error, perceived it, and corrected it
-properly. In ``Build the Word,'' she continued playing and was described as doing well.
+\subsection{Interface and Mediation Barriers}
 
-This combination of error detection, correction, and continuation resonates with the
-metacognitive framing of the project. P3's UES-Br responses were generally positive,
-particularly on reward and aesthetic appeal. Yet she did not understand the term
-``gratifying,'' again showing that abstract evaluative vocabulary can interrupt the
-validity of post-task self-report even when task interaction itself is successful.
+The most recurrent barriers were situated at the interface between visual design,
+language, and mediation. In the musical tasks, participants often needed support at
+the beginning of an activity, but this support was usually local: once the rule or
+expected action was made clear, they could continue. This was visible in P1's initial
+support in the notes and conductor tasks, P2's and P4's alphabet difficulties on
+specific letters, and P3's local support for particular alphabet items.
 
-\subsection{P4: Rapid Understanding, Pace Sensitivity, and Selective Persistence}
+Several barriers were not about music knowledge itself. P2 had initial difficulty in
+``Musical Rainbow'' because notes were not aligned on the same line. P5 encountered a
+scroll/touchpad problem that made the ``see again'' button inaccessible. P6's alphabet
+task was affected by a recognition failure for the letter O, which is better interpreted
+as a system limitation than as a participant difficulty. P1 required a zoom adjustment,
+showing that visual scale can affect access even when content is conceptually clear.
 
-P4 completed the session in 7 minutes and 25 seconds, the shortest time recorded. Her
-profile includes complete deafness after previous hearing variation, LIBRAS since childhood,
-and about one year of prior music experience described as mixed. P4's interaction was
-marked by rapid comprehension and impatience with slower or more repetitive tasks. In the
-alphabet game, she progressed quickly and required help only on specific letters.
+Pace also shaped access. P2 perceived ``Note Collector'' as slow and tried to click to
+accelerate it. P4 understood ``Conductor of Notes'' quickly, but the mediator asked her
+to slow down; in ``Musical Rainbow,'' speed and task structure appeared to interact with
+her difficulties. These cases show that accessible design for sign-language-mediated
+music learning involves temporal rhythm, feedback, and control, not only the presence
+of LIBRAS videos or visual musical content.
 
-In ``What Are the Musical Notes?,'' P4 correctly completed Do, Re, and Mi without
-difficulty. In ``Conductor of Notes,'' she understood quickly and did not need mediation,
-but the mediator asked her to slow down because of lack of patience. The notes state that
-she understood the game but did not go very far and did not wait for it to finish. In
-``Musical Rainbow,'' she acted quickly and had difficulties, suggesting that speed and task
-structure interacted: haste may have reduced attention to sequence, while the task may also
-have required a pace that did not match her preferred interaction rhythm.
+\subsection{UES-Br as Complementary Evidence}
 
-In ``Note Collector,'' P4 had no difficulty and understood quickly. The free-choice stage
-complicates any simple interpretation of impatience as disengagement: she continued playing
-the note collector until the progress bar was filled. This shows selective persistence. Her
-UES-Br profile differs from the others, with low focused attention and aesthetic appeal but
-high ratings for some reward items. Low absorption scores therefore did not mean absence of
-interest; they indicated a different tempo and form of engagement.
+The UES-Br results in Table~\ref{tab:uesbr} are best read as perceived experience
+under mediated conditions, not as a stand-alone measurement of engagement. They help
+identify contrasts among cases, but they do not replace the observational evidence.
+This distinction is important because some of the strongest results are divergences
+between observed interaction and questionnaire response.
 
-\subsection{Cross-Participant Patterns}
+The corrected PU scores changed the interpretation of several cases. Most PU items are
+negative statements about difficulty, confusion, or frustration; therefore, low raw
+agreement can indicate a more positive usability perception after inversion. P5's PU
+increased from a raw mean of 1.62 to a corrected mean of 4.88 after inverting negatively
+worded items, while P3 and P6 moved in the opposite direction, from raw PU means of 3.62
+and 3.38 to corrected means of 2.62 and 2.88. This confirms that reporting raw PU alone
+would be misleading. RW also required correction because RW3 is negatively worded.
 
-Across the four sessions, all children were able to perform core tasks after brief
-explanation or local mediation. The main barriers were not musical concepts alone, but the
-interpretation of task starts, visual arrangement, camera status, scale or zoom, game tempo,
-and questionnaire language. The interface appears to support entry into music learning
-through visual and sign-based resources, but its accessibility depends on careful alignment
-among instruction, visual feedback, interaction rhythm, and the child's communicative
-repertoire.
+P3 showed the clearest convergence between observed fluency and positive self-report,
+especially in reward. P4 showed lower focused attention and aesthetic appeal, but the
+observational record still documented selective persistence in ``Note Collector.'' P1
+performed the tasks successfully but struggled with the questionnaire itself, requiring
+multiple explanations for expressions such as ``I let myself be carried away,''
+``aesthetically pleasing,'' and ``gratifying.'' P5 is the most methodologically delicate
+case: he produced the highest corrected PU, AE, and RW profile, but the observer noted
+possible concern with pleasing the researchers. For that reason, P5 should be treated
+as evidence about the conditions of mediated self-report, not as simple proof of high
+satisfaction.
 
-Engagement appeared in distinct forms. P1's engagement was reflective and exploratory;
-P2's was efficient but less voluntary after task completion; P3's was fluent, self-correcting,
-and sustained; P4's was rapid, selective, and pace-sensitive. These differences show why
-engagement cannot be reduced to time on task, task success, or a single questionnaire score.
-P1 spent the most time partly because he asked questions and explored the surrounding
-technical environment; P4 spent the least time but persisted in a progress-based activity.
-The qualitative record therefore supports a plural view of engagement as attention,
-curiosity, control, reward, communicational accessibility, and willingness to continue.
+The two open responses support this cautious reading. P2 wrote that the experience
+showed the importance of trying a game in LIBRAS and created in LIBRAS, while P6 wrote
+that it was good. These comments are brief, but they reinforce the relevance of
+LIBRAS-mediated design while also showing the limited explanatory depth of post-task
+written feedback in this setting.
+
+Across cases, the main contrasts were not reducible to high or low engagement. P1 showed
+successful task interaction but substantial questionnaire barriers; P2 combined efficient
+completion with limited voluntary continuation; P3 showed the clearest convergence between
+self-correction and positive reward responses; P4 combined low attention and aesthetic
+scores with persistence in a progress-based task; P5 showed the strongest divergence
+between very high scores and possible acquiescence; and P6 combined autonomous interaction
+with localized system-related difficulty.
 
 \section{Discussion}
 
-The findings support the premise that sign-language-mediated musical interfaces can create
-meaningful access points for deaf children, including children with little or no prior music
-education. The participants were able to identify musical notes, follow visual sequences,
-use repetition, correct errors, and respond to game feedback. This aligns with Benites'
-work on AI-assisted music education for deaf children~\cite{benites2024,benites2025} and
-with semiotic approaches to accessible educational software that organize learning through
-relations among signs~\cite{rocha2016,rocha2023uais}.
+The findings suggest that the value of a LIBRAS-mediated music interface lies less in any
+single accessibility feature than in the coordination among multiple sign systems. During
+the sessions, participants moved among LIBRAS signs, written Portuguese, musical note
+names, colors, hand gestures, camera feedback, progress indicators, and mediator
+explanations. This extends Benites' work on AI-assisted music education for deaf
+learners~\cite{benites2024,benites2025} by showing how first-contact use is negotiated
+across these resources, and it gives empirical substance to semiotic approaches to
+accessible educational software~\cite{rocha2016,rocha2023uais}.
 
-The setting strengthens the relevance of these findings while also delimiting them. Because
-DERDIC and CeAC operate at the intersection of deaf education, accessibility, hearing and
-language support, and family-facing services, they provide an appropriate environment for
-observing accessible educational technology with children whose interaction is shaped by
-real communicational and educational histories. The setting also underscores that the
-platform's potential relevance extends beyond music. LIBRAS-mediated musical tasks can
-provide opportunities for written-word recognition, note naming, visual sequencing, memory,
-turn-taking, feedback interpretation, and autonomous decision-making.
+From this perspective, engagement should be understood as organized participation rather
+than as a stable internal state inferred from time, success, or questionnaire scores alone.
+The same interface could invite curiosity, fast completion, repair after error, selective
+persistence, or image-based navigation depending on the participant's communicational
+resources and on the task's visual-temporal organization. This is why the divergences
+between observation and UES-Br matter: they reveal how engagement is assembled in the
+session, not merely whether the participant ``liked'' the interface.
 
-At the same time, accessibility was not achieved simply by including LIBRAS or musical
-visuals. The sessions revealed barriers at the level of interface pacing, screen scale,
-spatial layout, camera-state communication, and evaluative language. P1's need for
-Notepad-mediated clarification, P2's difficulty with notes distributed on different lines,
-P3's uncertainty about whether the camera was still active, and P4's impatience with slower
-task rhythms all show that accessible interaction is a situated configuration. It depends
-on the relation among interface design, body movement, visual attention, language mediation,
-hardware, and task tempo.
+The institutional setting strengthens the relevance of these findings while also
+delimiting them. DERDIC and CeAC operate at the intersection of deaf education,
+accessibility, hearing and language support, and family-facing services. This made the site
+appropriate for observing an accessible educational technology with adolescents whose
+interaction is shaped by real communicational and educational histories. At the same time,
+the setting means that the sessions were not neutral laboratory encounters: interpretation,
+mediation, prior institutional trust, and researcher presence were part of the interaction.
 
-The UES-Br results are most useful when read against these behavioral observations. P3
-showed the clearest convergence between observed fluency and positive UES-Br tendencies.
-P1 combined strong task performance with substantial questionnaire difficulty. P2 completed
-tasks efficiently but showed limited voluntary continuation. P4 combined low absorption
-scores with persistence in a progress-based activity. These contrasts suggest that UES-Br
-responses can illuminate engagement, but only if the researcher attends to the
-communicational conditions under which the responses were produced.
+The barriers observed in the sessions should therefore be interpreted as breakdowns in
+coordination rather than as isolated usability defects. A layout problem is not only a
+visual issue if it disrupts the mapping between note sequence, color, and action; a pace
+problem is not only a timing issue if it changes whether the learner can anticipate,
+repeat, or control the task; a recognition error is not only a technical issue if it makes
+the participant's correct gesture appear incorrect. This interpretation shifts the design
+question from ``is LIBRAS present?'' to ``does the interface make the relation among
+LIBRAS, written language, musical representation, gesture, and feedback legible enough
+for autonomous action?''
+
+The UES-Br findings add a second, methodological contribution. The instrument was useful
+for structuring post-use reflection, but its scores became interpretable only when the
+scoring direction, mediation process, and observed behavior were considered together.
+The issue is not that UES-Br is unsuitable; rather, its use with deaf adolescents requires
+attention to the language in which items are understood, the social setting in which
+answers are produced, and the possibility that agreement with an item may reflect
+politeness, uncertainty, or translation effects as well as perceived experience. In this
+study, UES-Br is best understood as complementary evidence under mediated conditions, not
+as an independent validation of engagement.
 
 \subsection{Limitations}
 
-The study has methodological and interpretive limitations. The sample includes only four
+The study has methodological and interpretive limitations. The sample includes six
 participants, all tested in brief first-contact sessions at the same institution. The
-analysis is based on observational notes, task records, and UES-Br responses, rather than
-a fully coded audiovisual corpus. The results therefore cannot be generalized statistically
-and should be understood as exploratory evidence for iterative design and future research.
+analysis is based on observational notes, task records, open comments, and UES-Br
+responses, rather than a fully coded audiovisual corpus or repeated classroom use. The
+results therefore cannot be generalized statistically and should be understood as
+exploratory evidence for iterative design and future research.
 
 A specific limitation concerns the application of UES-Br in this context. The instrument
 is valuable because it offers a validated Brazilian Portuguese adaptation of the User
-Engagement Scale~\cite{miranda2021uesbr}. However, the annotations in LIBRAS-RESPOSTAS
-show that some participants experienced difficulties understanding portions of the
-questionnaire. P1 required multiple explanations, did not understand expressions such as
-``I let myself be carried away,'' and had doubts about ``aesthetically pleasing'' and
-``gratifying.'' P3 also did not understand ``gratifying.'' These examples suggest that some
-UES-Br vocabulary and abstraction levels may be too advanced or insufficiently accessible
-for children aged 12 to 13, especially deaf children responding through mediated
-communication.
+Engagement Scale~\cite{miranda2021uesbr}. However, the observations show that some
+participants experienced difficulties understanding portions of the questionnaire. P1
+required multiple explanations, did not understand expressions such as ``I let myself be
+carried away,'' and had doubts about ``aesthetically pleasing'' and ``gratifying.'' P3
+also did not understand ``gratifying.'' These examples suggest that some UES-Br vocabulary
+and abstraction levels may be insufficiently accessible for deaf adolescents aged 13 to
+15 when responses are produced through mediated communication.
 
 Questionnaire length may also have contributed to fatigue or reduced response precision.
 After several interface tasks, a long Likert-scale instrument can become cognitively
 demanding, particularly when each item may require translation, contextual explanation, or
 negotiation of meaning. These factors may have affected the reliability or interpretability
 of some engagement responses. This does not invalidate UES-Br; rather, it indicates that
-additional contextual adaptation is needed when the instrument is used with deaf children
-and young participants.
+additional contextual adaptation is needed when the instrument is used with deaf
+adolescents in mediated settings.
+
+Another limitation concerns social desirability and acquiescence. P5's case shows why high
+scores cannot be treated as direct evidence of high satisfaction without contextual
+checking. The observer explicitly noted a possible concern with pleasing the researchers,
+while the same session also documented reading difficulty and image-based orientation. This
+does not justify excluding P5; instead, it limits any aggregate interpretation and supports
+case-based triangulation.
 
 \subsection{Future Work}
 
 Future work should begin with additional testing involving other students from the same
 institution. This would allow the research team to examine whether the patterns observed
-here recur among children with different LIBRAS histories, hearing profiles, prior music
+here recur among adolescents with different LIBRAS histories, hearing profiles, prior music
 experiences, and familiarity with digital technologies. A broader participant set would
 also support more systematic comparison between behavioral observation and engagement
 measures.
 
 Longitudinal studies are also needed. First-contact engagement does not necessarily predict
-sustained educational value. Repeated sessions could examine whether children become more
+sustained educational value. Repeated sessions could examine whether participants become more
 autonomous, whether task comprehension improves, whether musical concepts are retained,
 and whether sign-language-mediated musical activities contribute to literacy, communication,
 memory, or interdisciplinary learning practices. Such studies would be especially useful for
@@ -483,32 +594,38 @@ clarifying the platform's relevance beyond music learning alone.
 Interface refinements should focus on the issues identified in the observations: clearer
 task onboarding, adjustable visual scale, more consistent spatial arrangement of notes,
 transparent camera-state indicators, and pacing options for activities that feel too slow
-or too fast. Engagement evaluation methods should also be adapted for deaf children,
+or too fast. Engagement evaluation methods should also be adapted for deaf adolescents,
 possibly through shorter scales, simplified vocabulary, LIBRAS video items, visual anchors,
-and interview prompts designed for mediated communication.
+and interview prompts designed for mediated communication. A future version of this study
+should also predefine how screen recordings will be coded, so that observational notes and
+audiovisual evidence can be compared more systematically.
 
 \section{Conclusion}
 
-This paper presented a qualitative exploratory analysis of four deaf children's interaction
-with LIBRAS Academy during tests conducted on April 6, 2026, at CeAC/DERDIC/PUC-SP. The
-study continues and expands Benites' previous work on AI-assisted music education for deaf
-children by examining situated interaction, accessibility barriers, and engagement through
-observational evidence and UES-Br responses.
+This paper presented a qualitative exploratory analysis of six deaf adolescents'
+first-contact interaction with LIBRAS Academy during tests conducted on April 6, 2026,
+at CeAC/DERDIC/PUC-SP. Rather than treating the sessions as a psychometric evaluation
+or as evidence of learning gains, the study examined situated interaction, accessibility
+barriers, and perceived experience through observational evidence, open comments, and
+UES-Br responses.
 
-The results indicate that the children could complete the proposed tasks and often
-demonstrated curiosity, autonomy, self-correction, or persistence. They also show that
-engagement emerged differently across participants: reflective exploration, efficient
-completion, self-regulated continuation, and pace-sensitive persistence. These patterns
-reinforce the need to interpret engagement as a situated relation among visual design,
-LIBRAS mediation, task rhythm, feedback, and communicational accessibility.
+The results indicate that the participants could complete the proposed tasks and often
+demonstrated curiosity, autonomy, self-correction, or persistence. More importantly, they
+show that engagement and accessibility emerged from the relation among visual design,
+LIBRAS mediation, written language, musical representation, task rhythm, feedback, prior
+repertoire, and the social conditions of evaluation.
 
-The study further suggests that LIBRAS-mediated musical technologies may contribute to
-inclusive educational practices beyond music learning, including literacy-related symbolic
-association, communication practice, and learner autonomy. These possibilities remain
-preliminary and require broader and longitudinal investigation. The main contribution of
-this paper is therefore not a definitive evaluation of LIBRAS Academy, but a grounded
-account of how deaf children interacted with it and how engagement evaluation can be
-improved for accessible learning technologies.
+For evaluation, UES-Br was useful as a structured self-report instrument, but its results
+required careful scoring and triangulation. Correcting negatively worded PU and RW items
+changed the interpretation of several cases, and semantic difficulty or possible
+acquiescence limited the strength of questionnaire-based claims.
+
+The main contribution of this paper is therefore twofold: a grounded account of how deaf
+adolescents interacted with a LIBRAS-mediated music learning interface in an institutional
+accessibility setting, and a methodological argument for interpreting engagement
+questionnaires through the communicational conditions under which responses are produced.
+Broader and longitudinal studies are still needed to examine learning, retention, and
+sustained educational value.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
